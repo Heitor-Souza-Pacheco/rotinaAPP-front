@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/01065831/appRotina-API && cat pom.xml && echo \"===SRC TREE===\" && find src -type f | head -200)",
+      "Read(//c/Users/01065831/appRotina-API/**)"
+    ]
+  }
+}
