@@ -43,9 +43,9 @@ class HabitoService {
     bool? ativo,
   }) async {
     final result = await _api.put('/api/habitos/$habitoId', body: {
-      if (titulo != null) 'titulo': titulo,
-      if (descricao != null) 'descricao': descricao,
-      if (ativo != null) 'ativo': ativo,
+      'titulo': ?titulo,
+      'descricao': ?descricao,
+      'ativo': ?ativo,
     });
     return Habito.fromJson(result as Map<String, dynamic>);
   }

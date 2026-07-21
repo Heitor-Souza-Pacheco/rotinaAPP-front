@@ -40,7 +40,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
 
   Future<void> _editarFuso(PerfilProvider provider) async {
     final atual = provider.usuario?.fusoHorario;
-    final opcoes = {..._fusos, if (atual != null) atual}.toList();
+    final opcoes = {..._fusos, ?atual}.toList();
     final escolhido = await showModalBottomSheet<String>(
       context: context,
       backgroundColor: AppColors.surface,

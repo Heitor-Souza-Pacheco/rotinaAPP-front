@@ -103,7 +103,7 @@ class _HojeScreenState extends State<HojeScreen> {
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
       sliver: SliverList.separated(
         itemCount: provider.doDia.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        separatorBuilder: (_, _) => const SizedBox(height: 12),
         itemBuilder: (context, i) {
           final habito = provider.doDia[i];
           return _HabitoDoDiaCard(
@@ -222,7 +222,7 @@ class _WeekStrip extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
         itemCount: dias.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 10),
+        separatorBuilder: (_, _) => const SizedBox(width: 10),
         itemBuilder: (context, i) {
           final d = dias[i];
           final selecionado = d.year == sel.year &&

@@ -21,11 +21,11 @@ class PerfilService {
     String? fcmToken,
   }) async {
     final body = <String, dynamic>{
-      if (fusoHorario != null) 'fusoHorario': fusoHorario,
+      'fusoHorario': ?fusoHorario,
       if (horarioReset != null) 'horarioReset': TimeParsing.format(horarioReset),
       if (horarioNotificacao != null)
         'horarioNotificacao': TimeParsing.format(horarioNotificacao),
-      if (fcmToken != null) 'fcmToken': fcmToken,
+      'fcmToken': ?fcmToken,
     };
     final result = await _api.put('/api/usuarios/perfil', body: body);
     return Usuario.fromJson(result as Map<String, dynamic>);
