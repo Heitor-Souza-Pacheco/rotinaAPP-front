@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "490413712619",
+    "project_id": "rotinaapp-9efc2",
+    "storage_bucket": "rotinaapp-9efc2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490413712619:android:fd66bb96ab401090ac4aae",
+        "android_client_info": {
+          "package_name": "com.example.rotinaapp_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwUuYtOdvfZxNVRnqkangTM5qDvvDitVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,12 +14,22 @@ import 'screens/login_screen.dart';
 import 'services/auth_service.dart';
 import 'services/habito_service.dart';
 import 'services/perfil_service.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDateFormatting('pt_BR');
+
+  // Adiciona estas 3 linhas:
+  await Firebase.initializeApp();
+  FirebaseMessaging messaging = FirebaseMessaging.instance;
+  await messaging.requestPermission();
+
   runApp(const RotinaApp());
 }
+
 
 class RotinaApp extends StatelessWidget {
   const RotinaApp({super.key});
