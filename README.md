@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/rotinaappbanner.png" width="100%" alt="RotinaApp">
+  <img src="./assets/rotinaappbanner.jpg" width="100%" alt="RotinaApp">
 </p>
 
 <p align="center">
